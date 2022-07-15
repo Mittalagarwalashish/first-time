@@ -1,0 +1,477 @@
+Microsoft Windows [Version 10.0.19044.1766]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\DELL>ssh -i Downloads\ashish_agarwal.pem ubuntu@13.233.58.8
+The authenticity of host '13.233.58.8 (13.233.58.8)' can't be established.
+ECDSA key fingerprint is SHA256:n0yrXp9Xp54h231ck23DIkGOSm7ri68l4TIz0FqnMHM.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '13.233.58.8' (ECDSA) to the list of known hosts.
+Welcome to Ubuntu 20.04.4 LTS (GNU/Linux 5.15.0-1015-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Thu Jul 14 15:27:08 UTC 2022
+
+  System load:  0.0               Processes:             97
+  Usage of /:   52.0% of 7.57GB   Users logged in:       0
+  Memory usage: 20%               IPv4 address for eth0: 172.31.41.234
+  Swap usage:   0%
+
+
+16 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+
+Last login: Wed Jul 13 15:41:35 2022 from 106.212.156.67
+ubuntu@ip-172-31-41-234:~$ sudo -i
+root@ip-172-31-41-234:~# history
+    1  sudo apt update
+    2  java
+    3  sudo apt update
+    4  sudo apt install openjdk-8-jre-headless -y
+    5  java -version
+    6  wget https://dlcdn.apache.org/hadoop/common/hadoop-3.2.3/hadoop-3.2.3.tar.gz -P ~/Downloads
+    7  ls
+    8  cd Downloads/
+    9  ls
+   10  history
+   11  java -version
+   12  ls
+   13  cd Downloads/
+   14  exit
+   15  ls
+   16  cd Downloads/
+   17  cd ..
+   18  wget https://dlcdn.apache.org/hadoop/common/hadoop-3.2.3/hadoop-3.2.3.tar.gz -P ~/Downloads
+   19  ls
+   20  cd Downloads/
+   21  ls
+   22  sudo tar zxvf ~/Downloads/hadoop-* -C /usr/local
+   23  clear
+   24  ls
+   25  sudo tar zxvf ~/Downloads/hadoop-* -C /usr/local
+   26  rm hadoop-3.2.3.tar.gz.1
+   27  sudo tar zxvf ~/Downloads/hadoop-* -C /usr/local
+   28  cd /usr/local/
+   29  ls
+   30  sudo mv /usr/local/hadoop-* /usr/local/hadoop
+   31  ls
+   32  cd
+   33  ls
+   34  cd ..
+   35  ls
+   36  vi .bashrc
+   37  ls
+   38  ls -a
+   39  vi .bashrc
+   40  history
+   41  readlink -f $(which java)
+   42  ls /usr/local/hadoop/
+   43  ls /usr/local/hadoop/bin/
+   44  pwd
+   45  vi .bashrc
+   46  cat .bashrc
+   47  source ~/.bashrc
+   48  echo $JAVA_HOME
+   49  echo $PATH
+   50  echo $HADOOP_HOME
+   51  ls /usr/local/hadoop/bin/
+   52  ls /usr/local/hadoop/
+   53  cat /usr/local/hadoop/bin/
+   54  cd /usr/local/hadoop/
+   55  ls
+   56  cd /etc/
+   57  cd ..
+   58  cd /usr/local/hadoop/
+   59  ls
+   60  cd /usr/local/hadoop/etc/
+   61  ls
+   62  cd /usr/local/hadoop/etc/hadoop/
+   63  ls
+   64  vi core-site.xml
+   65  vi yarn-site.xml
+   66  vi core-site.xml
+   67  history
+   68  exit
+   69  cd /usr/local/hadoop/etc/hadoop/
+   70  ls
+   71  vi mapred-site.xml
+   72  cat mapred-site.xml
+   73  ls -lrt mapred*
+   74  history
+   75  python
+   76  python 3
+   77  python3
+   78  sudo apt-get install software-properties-common
+   79  sudo add-apt-repository ppa:deadsnakes/ppa
+   80  sudo apt-get update
+   81  sudo apt-get install python3.8
+   82  python3
+   83  python4
+   84  python2
+   85  python3
+   86  vi date.py
+   87  ./ date.py
+   88  python3 date.py
+   89  nano datetime.py
+   90  python3 datetime.py
+   91  nano datetime.py
+   92  python3 datetime.py
+   93  nano datetime.py
+   94  nano datetimenow.py
+   95  python3 datetimenow.py
+   96  nano datetimenow.py
+   97  clear
+   98  python3 datetimenow.py
+   99  nano datetimenow.py
+  100  python3 datetimenow.py
+  101  rm datetimenow.py
+  102  nano dtm.py
+  103  clear
+  104  python3 dtm.py
+  105  python3
+  106  ls
+  107  rm datetime.py
+  108  ls
+  109  python3 dtm.py
+  110  history
+root@ip-172-31-41-234:~# mkdir hduser
+root@ip-172-31-41-234:~# cd hduser/
+root@ip-172-31-41-234:~/hduser# nano mapper.py
+root@ip-172-31-41-234:~/hduser# root@ip-172-31-41-234:~/hduser# chmod +x mapper.py
+root@ip-172-31-41-234:~/hduser# echo "today is not sunday. today is thrusday" | ./mapper.py
+  File "./mapper.py", line 19
+    print '%s\t%s' % (word, 1)
+          ^
+SyntaxError: invalid syntax
+root@ip-172-31-41-234:~/hduser# chmod +x mapper.py
+root@ip-172-31-41-234:~/hduser# ls
+mapper.py
+root@ip-172-31-41-234:~/hduser# nano mapper.py
+root@ip-172-31-41-234:~/hduser# echo "today is not sunday. today is thrusday" | ./mapper.py
+today 1
+is 1
+not 1
+sunday. 1
+today 1
+is 1
+thrusday 1
+root@ip-172-31-41-234:~/hduser# echo "om namh shivay om namh shivay" | ./mapper.py
+om 1
+namh 1
+shivay 1
+om 1
+namh 1
+shivay 1
+root@ip-172-31-41-234:~/hduser# echo "jaishiv" | ./mapper.py
+jaishiv 1
+root@ip-172-31-41-234:~/hduser# cat mapper.py | ./mapper.py
+#!/usr/bin/env 1
+python3 1
+"""mapper.py""" 1
+import 1
+sys 1
+# 1
+input 1
+comes 1
+from 1
+STDIN 1
+(standard 1
+input) 1
+for 1
+line 1
+in 1
+sys.stdin: 1
+# 1
+remove 1
+leading 1
+and 1
+trailing 1
+whitespace 1
+line 1
+= 1
+line.strip() 1
+# 1
+split 1
+the 1
+line 1
+into 1
+words 1
+words 1
+= 1
+line.split() 1
+# 1
+increase 1
+counters 1
+for 1
+word 1
+in 1
+words: 1
+# 1
+write 1
+the 1
+results 1
+to 1
+STDOUT 1
+(standard 1
+output); 1
+# 1
+what 1
+we 1
+output 1
+here 1
+will 1
+be 1
+the 1
+input 1
+for 1
+the 1
+# 1
+Reduce 1
+step, 1
+i.e. 1
+the 1
+input 1
+for 1
+reducer.py 1
+# 1
+# 1
+tab-delimited; 1
+the 1
+trivial 1
+word 1
+count 1
+is 1
+1 1
+print 1
+(word, 1
+1) 1
+root@ip-172-31-41-234:~/hduser# ls
+mapper.py
+root@ip-172-31-41-234:~/hduser# touc
+
+Command 'touc' not found, did you mean:
+
+  command 'touch' from deb coreutils (8.30-3ubuntu2)
+
+Try: apt install <deb name>
+
+root@ip-172-31-41-234:~/hduser# vi index.html
+root@ip-172-31-41-234:~/hduser# root@ip-172-31-41-234:~/hduser# ls
+index.html  mapper.py
+root@ip-172-31-41-234:~/hduser# nano reducer.py
+root@ip-172-31-41-234:~/hduser# root@ip-172-31-41-234:~/hduser# nano reducer.py
+root@ip-172-31-41-234:~/hduser# chmod +x reducer.py
+root@ip-172-31-41-234:~/hduser# ls
+index.html  mapper.py  reducer.py
+root@ip-172-31-41-234:~/hduser# cat mapper.py | ./mapper.py | sort | ./reducer.py
+  File "./reducer.py", line 34
+    print '%s\t%s' % (current_word, current_count)
+          ^
+SyntaxError: invalid syntax
+root@ip-172-31-41-234:~/hduser# nano reducer.py
+root@ip-172-31-41-234:~/hduser# cat mapper.py | ./mapper.py | sort | ./reducer.py
+  File "./reducer.py", line 34
+    print '%s\t%s' % (current_word, current_count)
+          ^
+SyntaxError: invalid syntax
+root@ip-172-31-41-234:~/hduser# nano reducer.py
+root@ip-172-31-41-234:~/hduser# cat mapper.py | ./mapper.py | sort | ./reducer.py
+Traceback (most recent call last):
+  File "./reducer.py", line 17, in <module>
+    word, count = line.split('\t', 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+root@ip-172-31-41-234:~/hduser# nano reducer.py
+root@ip-172-31-41-234:~/hduser# cat mapper.py | ./mapper.py | sort | ./reducer.py
+Traceback (most recent call last):
+  File "./reducer.py", line 17, in <module>
+    word, count = line.split('\t', 2)
+ValueError: not enough values to unpack (expected 2, got 1)
+root@ip-172-31-41-234:~/hduser# nano reducer.py
+root@ip-172-31-41-234:~/hduser# cat mapper.py | ./mapper.py | sort | ./reducer.py
+Traceback (most recent call last):
+  File "./reducer.py", line 17, in <module>
+    word, count = line.split('\t', 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+root@ip-172-31-41-234:~/hduser# nano reducer.py
+root@ip-172-31-41-234:~/hduser# cat mapper.py | ./mapper.py | sort | ./reducer.py
+['"""mapper.py""" 1'] 1
+['# 1'] 9
+['#!/usr/bin/env 1'] 1
+['(standard 1'] 2
+['(word, 1'] 1
+['1 1'] 1
+['1) 1'] 1
+['= 1'] 2
+['Reduce 1'] 1
+['STDIN 1'] 1
+['STDOUT 1'] 1
+['and 1'] 1
+['be 1'] 1
+['comes 1'] 1
+['count 1'] 1
+['counters 1'] 1
+['for 1'] 4
+['from 1'] 1
+['here 1'] 1
+['i.e. 1'] 1
+['import 1'] 1
+['in 1'] 2
+['increase 1'] 1
+['input 1'] 3
+['input) 1'] 1
+['into 1'] 1
+['is 1'] 1
+['leading 1'] 1
+['line 1'] 3
+['line.split() 1'] 1
+['line.strip() 1'] 1
+['output 1'] 1
+['output); 1'] 1
+['print 1'] 1
+['python3 1'] 1
+['reducer.py 1'] 1
+['remove 1'] 1
+['results 1'] 1
+['split 1'] 1
+['step, 1'] 1
+['sys 1'] 1
+['sys.stdin: 1'] 1
+['tab-delimited; 1'] 1
+['the 1'] 6
+['to 1'] 1
+['trailing 1'] 1
+['trivial 1'] 1
+['we 1'] 1
+['what 1'] 1
+['whitespace 1'] 1
+['will 1'] 1
+['word 1'] 2
+['words 1'] 2
+['words: 1'] 1
+['write 1'] 1
+root@ip-172-31-41-234:~/hduser# echo "om namh shivay om namh shivay" | ./mapper.py | sort | ./reducer.py
+['namh 1'] 2
+['om 1'] 2
+['shivay 1'] 2
+root@ip-172-31-41-234:~/hduser# echo "om om om om om" | ./mapper.py | sort | ./reducer.py
+['om 1'] 5
+root@ip-172-31-41-234:~/hduser# echo "om om om om. om" | ./mapper.py | sort | ./reducer.py
+['om 1'] 4
+['om. 1'] 1
+root@ip-172-31-41-234:~/hduser# echo " I recommend to test your mapper.py and reducer.py scripts locally before using them in a MapReduce job. Otherwise your jobs might successfully complete but there will be no job result data at all or not the results you would have expected. If that happens, most likely it was you (or me) who screwed up." | ./mapper.py | sort | ./reducer.py
+Here are some ideas on how to test the functionality of the Map and Reduce scripts['(or 1'] 1
+['I 1'] 1
+['If 1'] 1
+['MapReduce 1'] 1
+['Otherwise 1'] 1
+['a 1'] 1
+['all 1'] 1
+['and 1'] 1
+['at 1'] 1
+['be 1'] 1
+['before 1'] 1
+['but 1'] 1
+['complete 1'] 1
+['data 1'] 1
+['expected. 1'] 1
+['happens, 1'] 1
+['have 1'] 1
+['in 1'] 1
+['it 1'] 1
+['job 1'] 1
+['job. 1'] 1
+['jobs 1'] 1
+['likely 1'] 1
+['locally 1'] 1
+['mapper.py 1'] 1
+['me) 1'] 1
+['might 1'] 1
+['most 1'] 1
+['no 1'] 1
+['not 1'] 1
+['or 1'] 1
+['recommend 1'] 1
+['reducer.py 1'] 1
+['result 1'] 1
+['results 1'] 1
+['screwed 1'] 1
+['scripts 1'] 1
+['successfully 1'] 1
+['test 1'] 1
+['that 1'] 1
+['the 1'] 1
+['them 1'] 1
+['there 1'] 1
+['to 1'] 1
+['up. 1'] 1
+['using 1'] 1
+['was 1'] 1
+['who 1'] 1
+['will 1'] 1
+['would 1'] 1
+['you 1'] 2
+['your 1'] 2
+root@ip-172-31-41-234:~/hduser#
+root@ip-172-31-41-234:~/hduser# echo " I recommend to test your mapper.py and reducer.py scripts locally before using them in a MapReduce job. Otherwise your jobs might successfully complete but there will be no job result data at all or not the results you would have expected. If that happens, most likely it was you (or me) who screwed up." | ./mapper.py | sort | ./reducer.py
+['(or 1'] 1
+['I 1'] 1
+['If 1'] 1
+['MapReduce 1'] 1
+['Otherwise 1'] 1
+['a 1'] 1
+['all 1'] 1
+['and 1'] 1
+['at 1'] 1
+['be 1'] 1
+['before 1'] 1
+['but 1'] 1
+['complete 1'] 1
+['data 1'] 1
+['expected. 1'] 1
+['happens, 1'] 1
+['have 1'] 1
+['in 1'] 1
+['it 1'] 1
+['job 1'] 1
+['job. 1'] 1
+['jobs 1'] 1
+['likely 1'] 1
+['locally 1'] 1
+['mapper.py 1'] 1
+['me) 1'] 1
+['might 1'] 1
+['most 1'] 1
+['no 1'] 1
+['not 1'] 1
+['or 1'] 1
+['recommend 1'] 1
+['reducer.py 1'] 1
+['result 1'] 1
+['results 1'] 1
+['screwed 1'] 1
+['scripts 1'] 1
+['successfully 1'] 1
+['test 1'] 1
+['that 1'] 1
+['the 1'] 1
+['them 1'] 1
+['there 1'] 1
+['to 1'] 1
+['up. 1'] 1
+['using 1'] 1
+['was 1'] 1
+['who 1'] 1
+['will 1'] 1
+['would 1'] 1
+['you 1'] 2
+['your 1'] 2
+root@ip-172-31-41-234:~/hduser# exit
+logout
+ubuntu@ip-172-31-41-234:~$ exit
+logout
+Connection to 13.233.58.8 closed.
+
+C:\Users\DELL>
